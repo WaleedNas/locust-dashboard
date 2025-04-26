@@ -108,35 +108,43 @@ export default function LandingPage() {
         <div className="font-sans text-gray-800 w-full">
             {/* Hero Section */}
             <section 
-                id="hero-section"
-                ref={setSectionRef(0)}
-                className="min-h-screen flex flex-col justify-center items-center text-center text-white relative px-4 md:px-16"
-                style={{
-                    background: "linear-gradient(rgba(6, 45, 12, 0.85), rgba(6, 45, 12, 0.9)), url('/api/placeholder/1200/800')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center"
-                }}
-            >
-                <div className={`max-w-screen-lg mx-auto ${getAnimationClass('hero-section')}`}>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Fighting Locust Plagues with Quantum Intelligence</h1>
-                    <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Detect. Predict. Protect. A novel quantum approach to desert locust monitoring.</p>
+    id="hero-section"
+    ref={setSectionRef(0)}
+    className="min-h-screen flex flex-col justify-center items-center text-center text-white relative px-4 md:px-16"
+    style={{
+        background: "linear-gradient(rgba(6, 45, 12, 0.85), rgba(6, 45, 12, 0.9)), url('/api/placeholder/1200/800')",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+    }}
+>
+    {/* Logo Container */}
+    <div className="absolute top-2 left-4 p-6 rounded-full" style={{
+        background: "radial-gradient(circle, rgba(210, 180, 140, 1) 0%, rgba(160, 82, 45, 0) 60%)"
+    }}>
+        <img src="/logo.png" alt="Logo" className="h-22 -mt-[10]" />
+    </div>
 
-                    {/* 3D Locust Model Container */}
-                    <div className="w-full h-64 md:h-80 mb-8 rounded-lg overflow-hidden bg-opacity-50">
-                        <model-viewer 
-                            src="/locust.glb" 
-                            alt="A 3D model of a robot"
-                            auto-rotate 
-                            camera-controls 
-                            background-color="#455A64"
-                        ></model-viewer>
-                    </div>
-                </div>
+    <div className={`max-w-screen-lg mx-auto ${getAnimationClass('hero-section')}`}>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">Fighting Locust Plagues with Quantum Intelligence</h1>
+        <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Detect. Predict. Protect. A novel quantum approach to desert locust monitoring.</p>
 
-                <div className="absolute bottom-8 w-full flex justify-center animate-bounce">
-            <ChevronDown size={36} />
-          </div>
-            </section>
+        {/* 3D Locust Model Container */}
+        <div className="w-full h-64 md:h-80 mb-8 rounded-lg overflow-hidden bg-opacity-50">
+            <model-viewer 
+                src="/locust.glb" 
+                alt="A 3D model of a robot"
+                auto-rotate 
+                camera-controls 
+                background-color="#455A64"
+            ></model-viewer>
+        </div>
+    </div>
+
+    <div className="absolute bottom-8 w-full flex justify-center animate-bounce">
+        <ChevronDown size={36} />
+    </div>
+</section>
+
 
             {/* Problem Section */}
             <section 
