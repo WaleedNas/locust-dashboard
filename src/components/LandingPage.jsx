@@ -125,7 +125,7 @@ export default function LandingPage() {
     </div>
 
     <div className={`max-w-screen-lg mx-auto ${getAnimationClass('hero-section')}`}>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">Fighting Locust Plagues with Quantum Intelligence</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">Athar: Fighting Locust Plagues with Quantum Intelligence</h1>
         <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Detect. Predict. Protect. A novel quantum approach to desert locust monitoring.</p>
 
         {/* 3D Locust Model Container */}
@@ -316,7 +316,7 @@ export default function LandingPage() {
                 style={{ backgroundColor: "#f6f8e8" }}
             >
                 <div className={`max-w-screen-lg mx-auto text-center ${getAnimationClass('team-section')}`}>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-16" style={{ color: "#283618" }}>Project Team</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-16" style={{ color: "#283618" }}>Athar</h2>
                     
                     <p className="text-xl mb-12">Developed by NYUAD Hackathon Team 2</p>
                     
