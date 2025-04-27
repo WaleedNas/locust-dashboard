@@ -250,15 +250,18 @@ export default function LandingPage() {
                         Our GIS dashboard provides real-time locust breeding probability maps and migration predictions
                     </p>
                     
-                    <button 
-                        className={`text-white text-lg font-medium py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300 ${getAnimationClass('dashboard-section', 'delay-200')}`} 
-                        style={{ 
-                            backgroundColor: "#588157",
-                            transitionDelay: "200ms"
-                        }}
-                    >
-                        View GIS Dashboard
-                    </button>
+                    <a href="https://teamathardemo.netlify.app/" target="_self" rel="noopener noreferrer">
+  <button 
+    className={`text-white text-lg font-medium py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300 ${getAnimationClass('dashboard-section', 'delay-200')}`} 
+    style={{ 
+      backgroundColor: "#588157",
+      transitionDelay: "200ms"
+    }}
+  >
+    View GIS Dashboard
+  </button>
+</a>
+
                 </div>
             </section>
 
